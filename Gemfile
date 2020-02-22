@@ -45,12 +45,16 @@ group :development, :test do
 end
 
 group :test do
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 	gem 'rspec-rails'
 	gem "factory_bot_rails"
 	gem 'rspec-parameterized'
 	gem 'faker'
 	gem 'shoulda-matchers'
 	gem 'rails-controller-testing'
+  gem 'did_you_mean'
 end
 
 group :development do
